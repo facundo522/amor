@@ -1,4 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fef7e0;
+            font-family: 'Arial', sans-serif;
+        }
 
+        .container {
+            text-align: center;
+            color: #333;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #8B4513;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* Estilo de la flor */
+        .flower {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            transform: rotate(45deg);
+        }
+
+        .petal {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background: radial-gradient(circle at 30% 30%, #fff7a1, #ffeb3b);
+            border-radius: 50%;
+            top: 0;
+            left: 50%;
+            margin-left: -60px;
+            animation: pulse 2s infinite;
+        }
+
+        .petal:nth-child(1) {
+            transform: rotate(0deg) translateX(60px);
+        }
+
+        .petal:nth-child(2) {
+            transform: rotate(90deg) translateX(60px);
+        }
+
+        .petal:nth-child(3) {
+            transform: rotate(180deg) translateX(60px);
+        }
+
+        .petal:nth-child(4) {
+            transform: rotate(270deg) translateX(60px);
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle at 30% 30%, #ffeb3b, #ff9800);
+            border-radius: 50%;
+            margin-left: -30px;
+            margin-top: -30px;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
             100% {
                 transform: scale(1);
             }
@@ -20,4 +110,3 @@
     </div>
 </body>
 </html>
-
